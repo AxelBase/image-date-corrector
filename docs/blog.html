@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>AxelBase – Image Date Corrector via EXIF</title>
+    <link rel="icon" href="./AxelLab-Logo.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    
+		<link href="./_app/immutable/assets/0.DfayDL18.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/4.cGQkmObG.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.DfXevp68.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Bh8pizFR.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_Z8NYJaE.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CMZCzeR4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CvcplK_v.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.CY0GlTnP.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BHQ6gtZd.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/B3XM0Pcj.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/sQwwYkjf.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.PJgc7tdz.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DNbdbHkL.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Dx3DXRzm.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/C1A5rElv.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CWr0F5mH.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/SFa0UilF.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/4.wdM1YVKs.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DBrFiAQh.js"><!--u4k2t--><meta name="description" content="Technical insights, tutorials, and guides for using the EXIF Image Date and Time Changer — a client-side tool for fixing EXIF capture dates in JPEG photos."/><!----><title>Blog | EXIF Image Date and Time Changer</title>
+</head>
+<body data-bs-theme="light">
+    <div id="app"><!--[--><!--[--><!----><header class="fixed-top p-3 w-100 svelte-12qhfyh" style="pointer-events: none; z-index: 1040;"><nav class="container glass rounded-pill px-4 py-2 d-flex justify-content-between align-items-center shadow-sm svelte-12qhfyh" style="pointer-events: auto; max-width: 1200px;"><div class="d-flex align-items-center gap-3 svelte-12qhfyh"><a href="./" class="d-flex align-items-center gap-2 logo-group text-decoration-none svelte-12qhfyh"><img src="./AxelLab-Logo.ico" alt="Logo" class="navbar-brand-logo svelte-12qhfyh"/> <span class="fw-bold fs-5 tracking-tight svelte-12qhfyh" style="color: var(--color-text-main);">AxelBase</span></a> <div class="position-relative ms-2 ms-md-3 svelte-12qhfyh"><button class="btn btn-coffee d-flex align-items-center gap-2 svelte-12qhfyh"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" class="coffee-icon svelte-12qhfyh"><path d="M12.35,22.2L12,22A10,10,0,0,1,2,12V10A2,2,0,0,1,4,8H7.2A5.13,5.13,0,0,1,12,3A5.13,5.13,0,0,1,16.8,8H20A2,2,0,0,1,22,10V12A10,10,0,0,1,12.35,22.2M4,10V12A8,8,0,0,0,12,20A8,8,0,0,0,20,12V10H16.8A5.11,5.11,0,0,1,12.5,5.12A5.15,5.15,0,0,1,7.2,10H4Z" class="svelte-12qhfyh"></path></svg> <span class="d-none d-sm-inline svelte-12qhfyh">Buy me a coffee</span></button> <!--[!--><!--]--></div></div> <div class="d-flex align-items-center gap-3 svelte-12qhfyh"><ul class="nav d-none d-lg-flex align-items-center gap-1 m-0 svelte-12qhfyh"><li class="nav-item svelte-12qhfyh"><a class="nav-link-custom svelte-12qhfyh" href="./">Home</a></li> <li class="nav-item svelte-12qhfyh"><a class="nav-link-custom svelte-12qhfyh" href="./#about">About</a></li> <li class="nav-item svelte-12qhfyh"><a class="nav-link-custom svelte-12qhfyh" href="./#how-to">How to use</a></li> <li class="nav-item svelte-12qhfyh"><a class="nav-link-custom svelte-12qhfyh" href="./#faq">FAQ</a></li> <li class="nav-item svelte-12qhfyh"><a class="nav-link-custom svelte-12qhfyh" href="./blog">Blog</a></li></ul> <button class="btn-theme-toggle svelte-12qhfyh" aria-label="Toggle Light/Dark Mode"><i class="bi bi-moon-stars-fill theme-icon svelte-12qhfyh"></i></button> <button class="d-lg-none btn border-0 p-0 svelte-12qhfyh" type="button" aria-label="Menu"><i class="bi bi-grid-fill fs-2 svelte-12qhfyh" style="color: var(--wine-red);"></i></button></div></nav></header> <main style="padding-top: 100px;" class="svelte-12qhfyh"><!--[--><!----><div class="container fade-in blog-index svelte-u4k2t"><header class="blog-header svelte-u4k2t"><h1 class="svelte-u4k2t"><i class="bi bi-journal-richtext"></i> Blog: EXIF Date Insights</h1> <p class="subtitle svelte-u4k2t">Deep dives into EXIF metadata, capture date issues, client-side processing, and best practices for organizing your photo library using the EXIF Image Date and Time Changer.</p></header> <div class="posts-grid svelte-u4k2t"><!--[--><a href="./blog/posts/post1" class="card post-card glass svelte-u4k2t"><div class="card-body svelte-u4k2t"><h2 class="post-title svelte-u4k2t">What is the EXIF Image Date and Time Changer?</h2> <p class="post-description svelte-u4k2t">An introduction to this privacy-first, client-side web tool that fixes or adds EXIF capture dates to JPEG images without uploading anything.</p> <span class="read-more svelte-u4k2t">Read Article →</span></div></a><a href="./blog/posts/post2" class="card post-card glass svelte-u4k2t"><div class="card-body svelte-u4k2t"><h2 class="post-title svelte-u4k2t">How EXIF Date Correction Works In-Browser</h2> <p class="post-description svelte-u4k2t">A technical breakdown of reading, modifying, and rewriting EXIF DateTimeOriginal tags entirely in the browser using piexifjs.</p> <span class="read-more svelte-u4k2t">Read Article →</span></div></a><a href="./blog/posts/post3" class="card post-card glass svelte-u4k2t"><div class="card-body svelte-u4k2t"><h2 class="post-title svelte-u4k2t">Why Many Phone Photos Lack Capture Dates</h2> <p class="post-description svelte-u4k2t">Explaining why modern smartphone cameras often omit the DateTimeOriginal EXIF tag and how this tool solves that problem.</p> <span class="read-more svelte-u4k2t">Read Article →</span></div></a><a href="./blog/posts/post4" class="card post-card glass svelte-u4k2t"><div class="card-body svelte-u4k2t"><h2 class="post-title svelte-u4k2t">Adding EXIF Dates to Images with No Metadata</h2> <p class="post-description svelte-u4k2t">How the tool safely creates valid EXIF sections from scratch when images have no metadata at all, while preserving image quality.</p> <span class="read-more svelte-u4k2t">Read Article →</span></div></a><a href="./blog/posts/post5" class="card post-card glass svelte-u4k2t"><div class="card-body svelte-u4k2t"><h2 class="post-title svelte-u4k2t">Batch Processing Multiple Photos at Once</h2> <p class="post-description svelte-u4k2t">Learn how to correct dates across dozens of images simultaneously with individual or global date/time controls and ZIP download.</p> <span class="read-more svelte-u4k2t">Read Article →</span></div></a><a href="./blog/posts/post6" class="card post-card glass svelte-u4k2t"><div class="card-body svelte-u4k2t"><h2 class="post-title svelte-u4k2t">Preserving Image Quality During EXIF Updates</h2> <p class="post-description svelte-u4k2t">Technical details on how piexifjs inserts metadata without re-encoding or compressing the original JPEG data.</p> <span class="read-more svelte-u4k2t">Read Article →</span></div></a><a href="./blog/posts/post7" class="card post-card glass svelte-u4k2t"><div class="card-body svelte-u4k2t"><h2 class="post-title svelte-u4k2t">Fixing Photo Timelines in Google Photos &amp; Apple Photos</h2> <p class="post-description svelte-u4k2t">How correcting the EXIF DateTimeOriginal tag ensures your images appear in the correct chronological order in major photo libraries.</p> <span class="read-more svelte-u4k2t">Read Article →</span></div></a><!--]--></div></div><!----><!--]--></main> <footer class="custom-footer glass border-top py-3 svelte-12qhfyh"><div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center svelte-12qhfyh"><span class="svelte-12qhfyh">© 2025 AxelBase Image Date Corrector</span> <div class="footer-links svelte-12qhfyh"><a href="./privacy" class="svelte-12qhfyh">Privacy</a> <span class="mx-2 svelte-12qhfyh">•</span> <a href="./terms" class="svelte-12qhfyh">Terms</a></div></div></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1qqisk1 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/image-date-corrector"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.DfXevp68.js"),
+						import("./_app/immutable/entry/app.CY0GlTnP.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
