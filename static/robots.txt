@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://axelbase.github.io/image-date-corrector/sitemap.xml
+Sitemap: https://image-date-corrector.vercel.app/sitemap.xml
